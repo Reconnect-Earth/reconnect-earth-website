@@ -37,7 +37,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "build:styles": "postcss tailwind.css -o src/styles/site.css",
+    "build:styles": "postcss tailwind.css -o src/styles/",
+    "develop:styles": "postcss tailwind.css -o src/styles/",
     "prebuild": "yarn build:styles",
     "prestart": "yarn build:styles"
   },
