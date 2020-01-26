@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Reconnect Earth`,
+    description: `Reconnect Earth works for a socially and ecologically just future by fostering and growing a network of empowered young leaders to sustain grassroots social movements for years to come.`,
+    author: `Reconnect Earth`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
