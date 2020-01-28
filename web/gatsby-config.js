@@ -3,6 +3,28 @@ module.exports = {
     title: `Reconnect Earth`,
     description: `Reconnect Earth works for a socially and ecologically just future by fostering and growing a network of empowered young leaders to sustain grassroots social movements for years to come.`,
     author: `Reconnect Earth`,
+    menuLinks: [
+      {
+        name: "home",
+        link: "/",
+      },
+      {
+        name: "about",
+        link: "/about",
+      },
+      {
+        name: "Contribute",
+        link: "/contribute",
+      },
+      {
+        name: "Field Notes",
+        link: "/field-notes",
+      },
+      {
+        name: "Trips",
+        link: "/trips",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import header from './header.css'
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header
@@ -17,7 +18,7 @@ const Header = ({ siteTitle, menuLinks }) => (
       }}
     >
       <h1>
-        <Link to="/" className="text-accent">
+        <Link to="/" className="text-accent text-5xl">
           {siteTitle}
         </Link>
       </h1>

@@ -1,10 +1,34 @@
 /* src/tailwind.css */
 @tailwind base;
+
+@font-face {
+  font-family: National-Park-Heavy;
+  src: url("../fonts/nationalpark-heavy.woff") format("woff"),
+    url("../fonts/nationalpark-heavy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "National-Park-Regular";
+  src: url("../fonts/nationalpark-regular.woff") format("woff"),
+  url("../fonts/nationalpark-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind components;
 @tailwind utilities;
 
-
-
-h1, h2, h3, h4, h5, h6, p, main, a, footer {
-   color: #282828;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+main,
+a,
+footer {
+  color: #282828;
 }
