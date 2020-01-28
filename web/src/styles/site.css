@@ -2,14 +2,6 @@
 @tailwind base;
 
 @font-face {
-  font-family: National-Park-Heavy;
-  src: url("../fonts/nationalpark-heavy.woff") format("woff"),
-    url("../fonts/nationalpark-heavy.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "National-Park-Regular";
   src: url("../fonts/nationalpark-regular.woff") format("woff"),
   url("../fonts/nationalpark-regular.woff2") format("woff2");
@@ -27,8 +19,17 @@ h4,
 h5,
 h6,
 p,
-main,
 a,
+main,
 footer {
   color: #282828;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#site-title {
+  font-family: "National-Park-Regular", sans-serif;
+}
+
+#menu-link {
+  font-family: "National-Park-Regular", sans-serif;
 }

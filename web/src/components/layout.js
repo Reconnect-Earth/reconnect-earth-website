@@ -30,8 +30,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.site.siteMetadata.menuLinks}
       />
       <div
         style={{
