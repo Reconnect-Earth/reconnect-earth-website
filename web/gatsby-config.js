@@ -5,10 +5,6 @@ module.exports = {
     author: `Reconnect Earth`,
     menuLinks: [
       {
-        name: "Home",
-        link: "/",
-      },
-      {
         name: "About",
         link: "/about",
       },
