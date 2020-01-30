@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-
+import Contact from "./contact";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,18 +33,14 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
         menuLinks={data.site.siteMetadata.menuLinks}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
+        <Contact/>
         <footer>
           © {new Date().getFullYear()}
           {` `}
           <a href="https://www.reconnectearth.org">Reconnect Earth</a>
+
         </footer>
       </div>
     </>
