@@ -7,10 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
-import Contact from "./contact";
+import Contact from "./contact"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,12 +35,13 @@ const Layout = ({ children }) => {
       />
       <div>
         <main>{children}</main>
-        <Contact/>
-        <footer>
+        <Contact />
+        <footer className="bg-primary text-accent p-4 ">
           © {new Date().getFullYear()}
           {` `}
-          <a href="https://www.reconnectearth.org">Reconnect Earth</a>
-
+          <Link to="/" className="text-accent">
+            Reconnect Earth
+          </Link>
         </footer>
       </div>
     </>

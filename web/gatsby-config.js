@@ -29,6 +29,9 @@ module.exports = {
       options: {
         projectId: "bp91dgrn",
         dataset: "production",
+        watchMode: true,
+        overlayDrafts: false,
+        token: process.env.SANITY_TOKEN,
       },
     },
     {

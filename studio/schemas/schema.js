@@ -1,8 +1,8 @@
 // First, we must import the schema creator
-import createSchema from 'part:@sanity/base/schema-creator'
+import createSchema from 'part:@sanity/base/schema-creator';
 
 // Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type'
+import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 import blogPost from './blogPost';
 import person from './person';
@@ -10,6 +10,7 @@ import author from './author';
 import trip from './trip';
 import location from './location';
 import difficulty from './difficulty';
+import siteSettings from './documents/siteSettings';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,6 +20,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    siteSettings,
     blogPost,
     author,
     person,
@@ -27,5 +29,3 @@ export default createSchema({
     difficulty
   ])
 });
-
-

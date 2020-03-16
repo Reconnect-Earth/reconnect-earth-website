@@ -11,18 +11,18 @@ const Contact = () => (
     <h1>Contact Us</h1>
     <p>
       <label>
-        Your Name: <input className="block w-64" type="text" name="name" />
+        Your Name: <input className="block w-64 rounded" type="text" name="name" />
       </label>
     </p>
     <p>
       <label>
-        Your Email: <input className="block w-64" type="email" name="email" />
+        Your Email: <input className="block w-64 rounded" type="email" name="email" />
       </label>
     </p>
     <p>
       <label>
         I'm Interested In:{" "}
-        <select className="block w-64 h-20" name="role[]" multiple>
+        <select className="block w-64 h-20 rounded" name="role[]" multiple>
           <option value="trips">Trips</option>
           <option value="volunteering">Volunteering</option>
           <option value="something-else">Something Else</option>
@@ -31,7 +31,7 @@ const Contact = () => (
     </p>
     <p>
       <label>
-        Message: <textarea className="block w-64" name="message"></textarea>
+        Message: <textarea className="block w-64 rounded" name="message"></textarea>
       </label>
     </p>
     <p>

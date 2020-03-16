@@ -4,7 +4,7 @@
 @font-face {
   font-family: "National-Park-Regular";
   src: url("../fonts/nationalpark-regular.woff") format("woff"),
-  url("../fonts/nationalpark-regular.woff2") format("woff2");
+    url("../fonts/nationalpark-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,10 @@ main,
 footer {
   color: #282828;
   font-family: "Noto Sans", sans-serif;
+}
+
+a.text-accent:hover {
+  color: rgb(255, 242, 208);
 }
 
 #site-title {
