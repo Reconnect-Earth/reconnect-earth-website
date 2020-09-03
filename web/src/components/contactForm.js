@@ -1,6 +1,6 @@
 import React from "react"
 
-const Contact = () => (
+const ContactForm = () => (
   <form
     name="contact"
     method="POST"
@@ -11,12 +11,14 @@ const Contact = () => (
     <h1>Contact Us</h1>
     <p>
       <label>
-        Your Name: <input className="block w-64 rounded" type="text" name="name" />
+        Your Name:{" "}
+        <input className="block w-64 rounded" type="text" name="name" />
       </label>
     </p>
     <p>
       <label>
-        Your Email: <input className="block w-64 rounded" type="email" name="email" />
+        Your Email:{" "}
+        <input className="block w-64 rounded" type="email" name="email" />
       </label>
     </p>
     <p>
@@ -31,16 +33,22 @@ const Contact = () => (
     </p>
     <p>
       <label>
-        Message: <textarea className="block w-64 rounded" name="message"></textarea>
+        Message:{" "}
+        <textarea className="block w-64 rounded" name="message"></textarea>
       </label>
     </p>
     <p>
       <input type="hidden" name="bot-field" />
     </p>
     <p>
-      <button className="bg-primary text-lg px-4 py-2 rounded shadow-2xl m-4 text-accent hover:text-accent-hover hover:bg-primary-hover" type="submit">Submit</button>
+      <button
+        className="bg-primary text-lg px-4 py-2 rounded shadow-2xl m-4 text-accent hover:text-accent-hover hover:bg-primary-hover"
+        type="submit"
+      >
+        Submit
+      </button>
     </p>
   </form>
 )
 
-export default Contact
+export default ContactForm

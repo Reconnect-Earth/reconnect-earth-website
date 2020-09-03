@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
-import Contact from "./contact"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,7 +34,6 @@ const Layout = ({ children }) => {
       />
       <div>
         <main>{children}</main>
-        <Contact />
         <footer className="bg-primary text-accent p-4 ">
           © {new Date().getFullYear()}
           {` `}

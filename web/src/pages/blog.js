@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const FieldNotes = ({ data }) => {
+const Blog = ({ data }) => {
   const posts = data.allSanityBlogPost.nodes.map(post => (
     <div>
       <h2>{post.title}</h2>
@@ -12,7 +12,7 @@ const FieldNotes = ({ data }) => {
   ))
   return (
     <Layout>
-      <SEO title="Field Notes" />
+      <SEO title="Blog" />
       <h1>Recent Updates</h1>
       {posts}
     </Layout>
@@ -33,4 +33,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default FieldNotes
+export default Blog

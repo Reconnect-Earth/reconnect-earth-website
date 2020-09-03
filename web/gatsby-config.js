@@ -9,16 +9,20 @@ module.exports = {
         link: "/about",
       },
       {
+        name: "Trips",
+        link: "/trips",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+      {
         name: "Contribute",
         link: "/contribute",
       },
       {
-        name: "Field Notes",
-        link: "/field-notes",
-      },
-      {
-        name: "Trips",
-        link: "/trips",
+        name: "Contact",
+        link: "/contact",
       },
     ],
   },
