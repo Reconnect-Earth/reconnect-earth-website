@@ -34,14 +34,14 @@ const Layout = ({ children }) => {
       />
       <div>
         <main>{children}</main>
-        <footer className="bg-primary text-accent p-4 ">
-          © {new Date().getFullYear()}
-          {` `}
-          <Link to="/" className="text-accent">
-            Reconnect Earth
-          </Link>
-        </footer>
       </div>
+      <footer className="bg-primary text-accent text-center p-4">
+        © {new Date().getFullYear()}
+        {` `}
+        <Link to="/" className="text-accent">
+          Reconnect Earth
+        </Link>
+      </footer>
     </>
   )
 }

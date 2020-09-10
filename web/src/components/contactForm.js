@@ -6,7 +6,7 @@ const ContactForm = () => (
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    className="bg-accent flex flex-col items-center"
+    className="bg-accent flex flex-col items-center w-auto"
   >
     <h1>Contact Us</h1>
     <p>

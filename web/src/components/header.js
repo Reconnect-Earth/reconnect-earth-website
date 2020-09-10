@@ -3,23 +3,18 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header className="bg-primary mb-5 flex">
-    <nav className="flex">
-      <h1>
-        <Link
-          id="site-title"
-          to="/"
-          className="text-accent text-3xl whitespace-no-wrap p-4"
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <ul className="flex flex-wrap items-end mb-3">
+  <header className="bg-primary mb-4 flex">
+    <nav className="flex w-full items-baseline ml-24 mr-24" role="navigation">
+      <Link
+        id="site-title"
+        to="/"
+        className="text-accent p-4 text-4xl whitespace-no-wrap"
+      >
+        {siteTitle}
+      </Link>
+      <ul className="flex justify-end w-full">
         {menuLinks.map(link => (
-          <li
-            className="list-none pr-4 pl-4 whitespace-no-wrap"
-            key={link.name}
-          >
+          <li className="p-4" key={link.name}>
             <Link
               id="menu-link"
               className="text-accent text-2xl"
